@@ -72,6 +72,8 @@ group :development, :test do
   gem 'selenium-webdriver', '~> 3.11'
   gem 'chromedriver-helper', '~> 1.2'
   gem 'pg', '~> 0.20.0'
+  gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
+  gem 'capistrano-passenger', '~> 0.2.0'
 end
 
 group :development do
