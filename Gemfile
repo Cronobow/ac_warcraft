@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.2'
+ruby '2.4.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0.rc1'
@@ -72,6 +72,8 @@ group :development, :test do
   gem 'selenium-webdriver', '~> 3.11'
   gem 'chromedriver-helper', '~> 1.2'
   gem 'pg', '~> 0.20.0'
+  gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
+  gem 'capistrano-passenger', '~> 0.2.0'
 end
 
 group :development do
