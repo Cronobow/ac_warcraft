@@ -37,7 +37,6 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rails-i18n', '~> 5.1', '>= 5.1.1'
 
-gem 'pg', '~> 0.20.0'
 gem 'devise', '~> 4.2'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
@@ -62,12 +61,17 @@ gem 'meta-tags', '~> 2.9'
 gem 'redcarpet', '~> 3.4'
 gem 'rouge', '~> 3.1', '>= 3.1.1'
 
+group :production do
+  gem 'mysql2', '< 0.5'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.18'
   gem 'selenium-webdriver', '~> 3.11'
   gem 'chromedriver-helper', '~> 1.2'
+  gem 'pg', '~> 0.20.0'
 end
 
 group :development do
